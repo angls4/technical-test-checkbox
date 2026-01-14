@@ -9,8 +9,8 @@ export const Checkbox = forwardRef(function Checkbox(
   ref
 ) {
   return (
-    <label>
-      <PressedClassWrapper className={"checkbox-wrapper inline-flex items-center cursor-pointer " + (className ? className : "")}>
+    <label className={className}>
+      <PressedClassWrapper className={"checkbox-wrapper inline-flex items-center cursor-pointer "}>
         <input
           ref={ref}
           type="checkbox"
